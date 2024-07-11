@@ -56,7 +56,7 @@ export class NoteListService {
     }
   }
 
-  async addNote(item: Note) {
+  async addNote(item: Note, coliD: 'notes' | 'trash') {
     await addDoc(this.getNotesRef(), item).catch(
       (err) => { console.error(err) })
       .then((docRef) => {
