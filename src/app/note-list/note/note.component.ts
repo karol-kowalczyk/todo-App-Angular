@@ -52,10 +52,6 @@ export class NoteComponent {
     this.note.type = 'note';
   }
 
-  deleteNote() {
-
-  }
-
   saveNote() {
     this.noteService.updateNote(this.note);
   }
